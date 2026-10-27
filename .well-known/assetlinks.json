@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.antologico.android",
+        "sha256_cert_fingerprints": ["7A:B1:CB:0F:44:F9:49:7B:F4:49:D2:14:96:63:5A:41:4C:3A:FA:DA:20:8E:F4:07:91:6F:2D:08:21:D6:A8:9B"]
+      }
+    }]

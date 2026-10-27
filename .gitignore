@@ -1,0 +1,15 @@
+# Claves de firma — NUNCA subir a repos públicos
+signing.keystore
+*.keystore
+*.jks
+signing-key-info.txt
+*-key-info.txt
+
+# Binarios de distribución — van como GitHub Release, no en el repo
+*.apk
+*.aab
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
