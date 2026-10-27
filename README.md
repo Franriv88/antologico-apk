@@ -8,7 +8,7 @@
 
 Antológico es una plataforma SaaS para profesionales que publican talleres y usuarios que los descubren, reservan y pagan. Esta aplicación Android es la interfaz móvil para usuarios finales.
 
-La app está construida como una **Trusted Web Activity (TWA)** — arquitectura híbrida que integra la Progressive Web App de Antológico dentro de un contenedor nativo Android, validada por el estándar Digital Asset Links de Google.
+La app es una **aplicación híbrida Android** que combina una capa nativa con una interfaz web de alto rendimiento, validada mediante el estándar Digital Asset Links de Google para integración segura con el dominio `www.antologico.app`.
 
 ## Instalación del APK
 
@@ -22,7 +22,7 @@ La app está construida como una **Trusted Web Activity (TWA)** — arquitectura
 
 | Superficie | URL |
 |---|---|
-| App Mobile (TWA) | Ver sección [Releases](../../releases) |
+| App Mobile | Ver sección [Releases](../../releases) |
 | Panel Web (Profesionales) | https://www.antologico.app |
 | Super Admin | https://admin.antologico.app |
 
@@ -31,24 +31,20 @@ La app está construida como una **Trusted Web Activity (TWA)** — arquitectura
 ```
 antologico-apk/
 ├── .well-known/
-│   └── assetlinks.json   # Digital Asset Links (validación TWA)
+│   └── assetlinks.json   # Digital Asset Links (verificación de dominio)
 ├── docs/
-│   └── Readme.html        # Instrucciones originales de PWA Builder
+│   └── Readme.html        # Documentación técnica
 └── README.md
 ```
 
 ## Tecnología
 
-- **Contenedor nativo:** Trusted Web Activity (TWA) — Android Jetpack
-- **Generación del APK:** PWA Builder
-- **Web app embebida:** React (Vite) + Tailwind CSS
+- **Arquitectura:** Aplicación híbrida Android (capa nativa + interfaz web)
+- **SDK:** Android Jetpack
+- **Interfaz:** React (Vite) + Tailwind CSS
 - **Backend:** Firebase (Auth, Firestore, Cloud Functions)
 - **Pagos:** Mercado Pago SDK
 
 ## Repositorio web
 
 El código fuente de la web app está en: https://github.com/Franriv88/ANTOLOGICO
-
----
-
-*Desarrollado con [PWA Builder](https://www.pwabuilder.com/)*
